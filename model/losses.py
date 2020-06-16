@@ -26,26 +26,6 @@ def cce_iou_dice(y_true, y_pred, smooth=1, cat_weight=1, iou_weight=1, dice_weig
 
 
 @tf.function
-def cce_iou(y_true, y_pred, smooth=1, cat_weight=1, iou_weight=1):
-    return cat_weight * K.categorical_crossentropy(y_true, y_pred) + iou_weight * log_iou(y_true, y_pred, smooth)
-
-
-@tf.function
-def cce_dice(y_true, y_pred, smooth=1, cat_weight=1, dice_weight=1):
-    return cat_weight * K.categorical_crossentropy(y_true, y_pred) + dice_weight * log_dice(y_true, y_pred, smooth)
-
-
-@tf.function
-def bce_iou(y_true, y_pred, smooth=1, cat_weight=1, iou_weight=1):
-    return cat_weight * K.binary_crossentropy(y_true, y_pred) + iou_weight * log_iou(y_true, y_pred, smooth)
-
-
-@tf.function
-def bce_dice(y_true, y_pred, smooth=1, cat_weight=1, dice_weight=1):
-    return cat_weight * K.binary_crossentropy(y_true, y_pred) + dice_weight * log_dice(y_true, y_pred, smooth)
-
-
-@tf.function
 def log_iou(y_true, y_pred, smooth=1):
     return - K.log(iou(y_true, y_pred, smooth))
 
