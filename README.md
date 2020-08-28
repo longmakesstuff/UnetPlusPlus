@@ -30,6 +30,8 @@ Following are some results of the thesis.
     </tr>
 </table>
 
+---
+
 ### UNet++: A Nested U-Net Architecture for Medical Image Segmentation
 
 UNet++ is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of 
@@ -59,6 +61,7 @@ if __name__ == '__main__':
     unet.compile()
     unet.summary()
 ```
+
 ---
 
 ### Class imbalance
@@ -66,6 +69,7 @@ if __name__ == '__main__':
 This model was designed for multi-classes classification and therefore uses [softmax](https://en.wikipedia.org/wiki/Softmax_function). 
 as final activation. In order to fight class imbalance, which is usually the case, the high-order function 
 `model.losses.weighted_loss` can be used to decorate classical loss functions.
+
 ---
 
 ### Model summary
