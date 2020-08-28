@@ -5,6 +5,16 @@ UNet++ is a new general purpose image segmentation architecture for more accurat
 [![License](http://img.shields.io/:license-mit-green.svg?style=flat-square)](http://badges.mit-license.org)
 ![Network architecture](https://github.com/CodeAndChoke/UnetPlusPlus/blob/master/images/figure.png)
 
+---
+
+### An real world application of Unet++
+
+This model was used in my Bachelor thesis for segmenting bacteria in blood. The dataset and an example Jupyter Notebook can be found at the Kaggle [Bacteria detection with darkfield microscopy](https://www.kaggle.com/longnguyen2306/bacteria-detection-with-darkfield-microscopy).
+
+Here are some results of the work:
+
+---
+
 ### Usage
 
 Clone the repository and import the model with:
@@ -18,11 +28,15 @@ if __name__ == '__main__':
     unet.summary()
 ```
 
+---
+
 ### Class imbalance
 
 This model was designed for multi-classes classification and therefore uses [softmax](https://en.wikipedia.org/wiki/Softmax_function). 
 as final activation. In order to fight class imbalance, which is usually the case, the high-order function 
 `model.losses.weighted_loss` can be used to decorate classical loss functions.
+
+---
 
 ### Model summary
 
