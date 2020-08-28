@@ -8,8 +8,8 @@ Following is a visual comparision of Unet (left) and Unet++ (right).
 
 <table border="1" width="100%">
     <tr>
-        <td><img src="images/unet.png" width="50%"></td>
-        <td><img src="images/unetpp.png" width="50%"></td>
+        <td><img src="images/unet.png" width="350px"></td>
+        <td><img src="images/unetpp.png" width="350px"></td>
     </tr>
 </table>
 
