@@ -17,10 +17,9 @@ Following is a visual comparision of Unet (left) and Unet++ (right).
 
 ### An real world application of Unet++
 
-This model was used in my Bachelor thesis for segmenting bacteria in blood. The dataset and an example Jupyter Notebook can be found at the Kaggle [Bacteria detection with darkfield microscopy](https://www.kaggle.com/longnguyen2306/bacteria-detection-with-darkfield-microscopy).
+This model was used in my bachelor thesis for segmenting bacteria in blood. The dataset and an example Jupyter Notebook can be found at the Kaggle [Bacteria detection with darkfield microscopy](https://www.kaggle.com/longnguyen2306/bacteria-detection-with-darkfield-microscopy).
 
-Here are some results of the work:
-
+Following are some results of the thesis.
 
 <table border="1" width="100%">
     <tr>
@@ -30,6 +29,17 @@ Here are some results of the work:
         <td><img src="images/true_004.png" width="150px"></td>
         <td><img src="images/true_005.png" width="150px"></td>
         <td><img src="images/true_006.png" width="150px"></td>
+    </tr>
+</table>
+
+<table border="1" width="100%">
+    <tr>
+        <td><img src="images/pred_001.png" width="150px"></td>
+        <td><img src="images/pred_002.png" width="150px"></td>
+        <td><img src="images/pred_003.png" width="150px"></td>
+        <td><img src="images/pred_004.png" width="150px"></td>
+        <td><img src="images/pred_005.png" width="150px"></td>
+        <td><img src="images/pred_006.png" width="150px"></td>
     </tr>
 </table>
 
