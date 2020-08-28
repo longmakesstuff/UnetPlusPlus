@@ -21,6 +21,8 @@ This model was used in my bachelor thesis for segmenting bacteria in blood. The 
 
 Following are some results of the thesis.
 
+##### Manual segmentation as ground truth. Blood cells tagged with red color, bacteria tagged with yellow color.
+
 <table border="1" width="100%">
     <tr>
         <td><img src="images/true_001.png" width="150px"></td>
@@ -31,6 +33,8 @@ Following are some results of the thesis.
         <td><img src="images/true_006.png" width="150px"></td>
     </tr>
 </table>
+
+##### Prediction of UnetPlusPlus after 8 hours training on 300 data points.
 
 <table border="1" width="100%">
     <tr>
