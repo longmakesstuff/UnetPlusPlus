@@ -1,21 +1,4 @@
-## UNet++: A Nested U-Net Architecture for Medical Image Segmentation
-
-UNet++ is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of 
-varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways, which aim to address 
-two key challenges of the U-Net: 1) unknown depth of the optimal architecture and 2) the unnecessarily restrictive design of skip connections.
-
-Following is a visual comparision of Unet (left) and Unet++ (right).
-
-<table border="1" width="100%">
-    <tr>
-        <td><img src="images/unet.png" width="400px"></td>
-        <td><img src="images/unetpp.png" width="400px"></td>
-    </tr>
-</table>
-
----
-
-### An real world application of Unet++
+### A Keras implementation and real world application of Unet++
 
 This model was used in my bachelor thesis for segmenting bacteria in blood. The dataset and an example Jupyter Notebook can be found at the Kaggle [Bacteria detection with darkfield microscopy](https://www.kaggle.com/longnguyen2306/bacteria-detection-with-darkfield-microscopy).
 
@@ -47,6 +30,21 @@ Following are some results of the thesis.
     </tr>
 </table>
 
+### UNet++: A Nested U-Net Architecture for Medical Image Segmentation
+
+UNet++ is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of 
+varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways, which aim to address 
+two key challenges of the U-Net: 1) unknown depth of the optimal architecture and 2) the unnecessarily restrictive design of skip connections.
+
+Following is a visual comparision of Unet (left) and Unet++ (right).
+
+<table border="1" width="100%">
+    <tr>
+        <td><img src="images/unet.png" width="400px"></td>
+        <td><img src="images/unetpp.png" width="400px"></td>
+    </tr>
+</table>
+
 ---
 
 ### Usage
@@ -61,7 +59,6 @@ if __name__ == '__main__':
     unet.compile()
     unet.summary()
 ```
-
 ---
 
 ### Class imbalance
@@ -69,7 +66,6 @@ if __name__ == '__main__':
 This model was designed for multi-classes classification and therefore uses [softmax](https://en.wikipedia.org/wiki/Softmax_function). 
 as final activation. In order to fight class imbalance, which is usually the case, the high-order function 
 `model.losses.weighted_loss` can be used to decorate classical loss functions.
-
 ---
 
 ### Model summary
