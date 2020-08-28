@@ -21,6 +21,18 @@ This model was used in my Bachelor thesis for segmenting bacteria in blood. The 
 
 Here are some results of the work:
 
+
+<table border="1" width="100%">
+    <tr>
+        <td><img src="images/true_001.png" width="150px"></td>
+        <td><img src="images/true_002.png" width="150px"></td>
+        <td><img src="images/true_003.png" width="150px"></td>
+        <td><img src="images/true_004.png" width="150px"></td>
+        <td><img src="images/true_005.png" width="150px"></td>
+        <td><img src="images/true_006.png" width="150px"></td>
+    </tr>
+</table>
+
 ---
 
 ### Usage
