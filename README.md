@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
 ### Class imbalance
 
-This model was designed for **multi-classes classification** and therefore uses [softmax](https://en.wikipedia.org/wiki/Softmax_function). 
+This model was designed for **multi-classes classification** and therefore uses [softmax](https://en.wikipedia.org/wiki/Softmax_function)
 as final activation. In order to fight class imbalance, which is usually the case, the high-order function 
 `model.losses.weighted_loss` can be used to decorate classical loss functions.
 
